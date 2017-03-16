@@ -83,17 +83,5 @@ friends: [
     {
         title: "Tango Blog",
         href: "http://www.wtango.com"
-    },{
-        title: "Foo",
-        href: "#"
-    },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
     }
 ]
