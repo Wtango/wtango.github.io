@@ -8,6 +8,8 @@ guid: http://www.wtango.com/?p=392
 permalink: '/%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f17-%e8%bf%ad%e4%bb%a3%e5%99%a8%e6%a8%a1%e5%bc%8f/'
 categories:
   - 设计模式
+tags:
+  - 设计模式
 ---
 迭代器模式是一个非常常用的设计模式，STL模板中就使用了迭代器设计模式，各种容器的“iterator”就是使用了迭代器模式。我们看一下《设计模式》如何描述这个这个设计模式：
 

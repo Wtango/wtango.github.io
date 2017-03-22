@@ -8,6 +8,8 @@ guid: http://www.wtango.com/?p=253
 permalink: '/tlv%e7%bc%96%e7%a0%81%e9%80%9a%e4%bf%a1%e5%8d%8f%e8%ae%ae%e8%ae%be%e8%ae%a1/'
 categories:
   - 网络编程
+tags:
+  - 网络编程
 ---
 #### 1. 通信协议
 

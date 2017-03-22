@@ -8,6 +8,9 @@ guid: http://tango.wicp.net:8888/?p=44
 permalink: '/%e4%bd%bf%e7%94%a8shell%e5%91%bd%e4%bb%a4%e5%8e%bb%e9%99%a4%e6%96%87%e4%bb%b6%e4%b8%ad%e7%9a%84bom/'
 categories:
   - Linux
+tags:
+  - Records
+  - Linux
 ---
 <span style="color: #ff0000;">使用前请先备份文件</span>,因为会直接修改原文件。
 

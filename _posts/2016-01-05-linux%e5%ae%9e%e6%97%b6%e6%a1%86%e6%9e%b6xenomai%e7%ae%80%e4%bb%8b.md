@@ -8,6 +8,8 @@ guid: http://www.wtango.com/?p=372
 permalink: '/linux%e5%ae%9e%e6%97%b6%e6%a1%86%e6%9e%b6xenomai%e7%ae%80%e4%bb%8b/'
 categories:
   - Xenomai
+tags:
+  - Linux
 ---
 #### 1. Xenomai是什么
 

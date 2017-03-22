@@ -8,6 +8,8 @@ guid: http://www.wtango.com/?p=295
 permalink: '/%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f7-%e5%8e%9f%e5%9e%8b%e6%a8%a1%e5%bc%8f/'
 categories:
   - 设计模式
+tags:
+  - 设计模式
 ---
 原型模式属于创建型模式，《设计模式》一书对中原型模式的描述为：
 

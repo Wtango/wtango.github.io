@@ -9,6 +9,8 @@ permalink: '/%e6%ae%b5%e9%94%99%e8%af%afsegmentation-fault%e4%ba%a7%e7%94%9f%e7%
 categories:
   - c\c++
   - Linux
+tags:
+  - c\c++
 ---
 #### 1. 什么是段错误
 
