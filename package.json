@@ -5,18 +5,21 @@
     "homepage": "https://github.com.cnpmjs.org/Wtango/wtango.github.io",
     "author": "Hux",
     "devDependencies": {
-        "grunt": "~0.4.5",
-        "grunt-contrib-less": "~0.11.4",
-        "grunt-contrib-watch": "~0.6.1",
-        "grunt-banner": "~0.2.3",
-        "grunt-contrib-uglify": "~0.5.1"
+        "grunt": "^0.4.5",
+        "grunt-banner": "^0.2.3",
+        "grunt-cli": "^1.3.2",
+        "grunt-contrib-less": "^0.11.4",
+        "grunt-contrib-uglify": "^0.5.1",
+        "grunt-contrib-watch": "^0.6.1",
+        "http-server": "^0.12.3"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com.cnpmjs.org/Wtango/wtango.github.io"
     },
     "scripts": {
-        "preview": "cd _site; python -m SimpleHTTPServer 8020",
-        "watch": "grunt watch & npm run preview & jekyll serve -w;"
+        "preview": "http-server _site",
+        "watch": "grunt watch & npm run jekyll -- serve -w & npm run preview",
+        "jekyll": "docker run --rm --volume=\"$PWD:/srv/jekyll\" jekyll/jekyll jekyll"
     }
 }
