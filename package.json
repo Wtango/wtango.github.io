@@ -19,7 +19,7 @@
     },
     "scripts": {
         "preview": "http-server _site",
-        "watch": "grunt watch & npm run jekyll -- serve -w & npm run preview",
+        "watch": "grunt watch & npm run jekyll -- build -w & npm run preview",
         "jekyll": "docker run --rm --volume=\"$PWD:/srv/jekyll\" jekyll/jekyll jekyll"
     }
 }
