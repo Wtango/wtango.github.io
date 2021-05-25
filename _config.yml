@@ -73,7 +73,7 @@ ga_domain: null
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "就是做底层的，别问我什么时候做到中高层。"
+sidebar-about-description: "不闻不若闻之，闻之不若见之，见之不若知之，制止不若行之。"
 sidebar-avatar: /img/avatar-Tango.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
