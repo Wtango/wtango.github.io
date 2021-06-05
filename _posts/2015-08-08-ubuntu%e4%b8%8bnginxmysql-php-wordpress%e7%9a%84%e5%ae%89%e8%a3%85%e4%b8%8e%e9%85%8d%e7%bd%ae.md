@@ -113,7 +113,7 @@ server {
         index index.php index.html index.htm;
         server_name 192.34.59.214;
         location / {
-                try_files $uri $uri/ /index.php?q=$uri&amp;$args;
+                try_files $uri $uri/ /index.php?q=$uri&$args;
         }
         error_page 404 /404.html;
         error_page 500 502 503 504 /50x.html;

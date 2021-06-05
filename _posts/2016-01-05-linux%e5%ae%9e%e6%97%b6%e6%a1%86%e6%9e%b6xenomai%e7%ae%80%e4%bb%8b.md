@@ -6,12 +6,17 @@ author: Tango
 layout: post
 guid: http://www.wtango.com/?p=372
 permalink: '/linux%e5%ae%9e%e6%97%b6%e6%a1%86%e6%9e%b6xenomai%e7%ae%80%e4%bb%8b/'
-categories:
-  - Xenomai
 tags:
   - Linux
+  - Xenomai
 ---
-#### 1. Xenomai是什么
+- [1. Xenomai是什么](#1-xenomai是什么)
+- [2. Xenomai架构](#2-xenomai架构)
+  - [2.1 双内核结构](#21-双内核结构)
+  - [2.2 Adeos](#22-adeos)
+    - [3. 性能测试](#3-性能测试)
+
+## 1. Xenomai是什么
 
 Xenomai是一个于Linux平台上使用的实时框架，其使得各种实时操作系统（vxWorks、QNX等）的API在Linux平台上可用，并且为Linux平台提供硬实时调度保障。
 
@@ -25,15 +30,15 @@ Xenomai不仅可以运行主线Linux内核，也可以运行于各种嵌入式�
   * 将RTOS的应用程序移植到Linux
   * 以Linux原生应用程序的方式运行RTOS应用（VxWorks, pSOS, VRTX, uITRON, POSIX）
 
-#### 2. Xenomai架构
+## 2. Xenomai架构
 
-##### 2.1 双内核结构
+### 2.1 双内核结构
 
 Xenomai操作双内核的结构提供实时操作。一个是高优先级的微内核co-kernel，另一个是Linux内核。co-kernel用于运行实时任务，而Linux内核则像往常一样提供Linux的各种服务，两个内核由Adeos管理着，一个内核占据一个域。
 
 需要注意的是微内核域有可能会切换到Linux Kernel域中去，这会对Xenomai的实时性破坏。产生这种情况的原因有可能是在实时任务中使用了Linux的一些系统调用，所以在实时任务中注意Linux系统调用的使用。
 
-##### 2.2 Adeos
+### 2.2 Adeos
 
 Adeos/i-pipe是实现双内核的关键，Xenomai和RTAI都是基于Adeos实现的。在基于Adeos 的系统中，每个操作系统都是在独立的域内运行（但不一定所有的域实现的都是操作系统，也可以是完成其它功能的软件实体），每个域可以有独立的地址空间和类似于进程、虚拟内存等的软件抽象层，而且这些资源也可以由不同的域共享。
 
