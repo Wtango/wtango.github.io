@@ -32,9 +32,9 @@ tags:
 
 #### 3.实现
 
-<pre class="brush: cpp; title: ; notranslate" title="">#include &lt;stdio.h&gt;
-#include &lt;string.h&gt;
-#include &lt;iostream&gt;
+<pre class="brush: cpp; title: ; notranslate" title="">#include <stdio.h>
+#include <string.h>
+#include <iostream>
 
 using namespace std;
 
@@ -77,15 +77,15 @@ public:
 int main()
 {
 	Female *mm = new Female();
-	cout &lt;&lt; "mm's sex number is:"&lt;&lt; mm-&gt;sex &lt;&lt; endl;
-	Female *mm1 = mm-&gt;clone();
-	cout &lt;&lt; "mm1's sex number is:"&lt;&lt; mm1-&gt;sex &lt;&lt; endl;
+	cout << "mm's sex number is:"<< mm->sex << endl;
+	Female *mm1 = mm->clone();
+	cout << "mm1's sex number is:"<< mm1->sex << endl;
 
 	Male *gg = new Male();
-	gg-&gt;age = 18;
-	cout &lt;&lt; "gg's sex number is:"&lt;&lt; gg-&gt;sex &lt;&lt; "\tage is:" &lt;&lt; gg-&gt;age &lt;&lt; endl;
-	Male *gg1 = gg-&gt;clone();
-	cout &lt;&lt; "gg1's sex number is:"&lt;&lt; gg1-&gt;sex &lt;&lt; "\tage is:" &lt;&lt; gg1-&gt;age &lt;&lt; endl;
+	gg->age = 18;
+	cout << "gg's sex number is:"<< gg->sex << "\tage is:" << gg->age << endl;
+	Male *gg1 = gg->clone();
+	cout << "gg1's sex number is:"<< gg1->sex << "\tage is:" << gg1->age << endl;
 	
 }
 </pre>

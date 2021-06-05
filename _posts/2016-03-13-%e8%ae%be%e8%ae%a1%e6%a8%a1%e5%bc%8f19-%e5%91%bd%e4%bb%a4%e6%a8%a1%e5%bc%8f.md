@@ -38,14 +38,14 @@ tags:
 
 #### 3.实现
 
-<pre class="brush: cpp; title: ; notranslate" title="">#include &lt;iostream&gt;
+<pre class="brush: cpp; title: ; notranslate" title="">#include <iostream>
 
 class Receiver
 {
 public:
         void Action()
         {
-                std::cout &lt;&lt; "Action..." &lt;&lt; std::endl;
+                std::cout << "Action..." << std::endl;
         }
 };
 
@@ -56,7 +56,7 @@ protected:
 public:
 	Command(Receiver *r)
 	{
-		this-&gt;receiver = r;
+		this->receiver = r;
 	}
 	virtual ~Command(){}
 	virtual void Execute() = 0;
@@ -69,7 +69,7 @@ public:
 	~ConcreteCommand() {}
 	void Execute() 
 	{
-		receiver-&gt;Action();
+		receiver->Action();
 	}
 };
 
@@ -80,12 +80,12 @@ private:
 public:
 	void SetCommand(Command *c)
 	{
-		this-&gt;command = c;
+		this->command = c;
 	}
 
 	void ExecuteCommand()
 	{
-		command-&gt;Execute();
+		command->Execute();
 	}
 };
 
@@ -96,8 +96,8 @@ int main()
 	Command *c = new ConcreteCommand(r);
 	Invoker *i = new Invoker();
 
-	i-&gt;SetCommand(c);
-	i-&gt;ExecuteCommand();
+	i->SetCommand(c);
+	i->ExecuteCommand();
 
 	delete r;
 	delete c;

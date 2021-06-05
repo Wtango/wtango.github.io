@@ -39,11 +39,11 @@ tags:
 
 设计模式是程序开发总结下来的一套经验，我们不必一成不变的遵守某个设计模式的结构。没有最好的设计模式，只有最适合的设计模式，所以应该写出适合我们使用的代码结构。STL中的Iterator也是一个很不错的Iterator结构。我们还是使用第2结中的模式结构来实现Iterator模式。
 
-<pre class="brush: cpp; title: ; notranslate" title="">#include &lt;iostream&gt;
-#include &lt;vector&gt;
+<pre class="brush: cpp; title: ; notranslate" title="">#include <iostream>
+#include <vector>
 using namespace std;
 
-template&lt;class Item&gt;
+template<class Item>
 class Iterator
 {
 public:
@@ -54,50 +54,50 @@ public:
 	virtual ~Iterator() {}
 };
 
-template&lt;class Item&gt;
+template<class Item>
 class ConcreteAggregate;
 
-template&lt;class Item&gt;
-class ConcreteIterator : public Iterator &lt;Item&gt;
+template<class Item>
+class ConcreteIterator : public Iterator <Item>
 {
-	ConcreteAggregate&lt;Item&gt; * aggr;
+	ConcreteAggregate<Item> * aggr;
 	int cur;
 public:
-	ConcreteIterator(ConcreteAggregate&lt;Item&gt;*a) : aggr(a),cur(0){}
+	ConcreteIterator(ConcreteAggregate<Item>*a) : aggr(a),cur(0){}
 	virtual void first()
 	{
 		cur=0;
 	}
 	virtual void next()
 	{
-		if(cur&lt;aggr-&gt;getLen())
+		if(cur<aggr->getLen())
 			cur++;
 	}
 	virtual Item* currentItem()
 	{
-		if(cur&lt;aggr-&gt;getLen())
+		if(cur<aggr->getLen())
 			return &(*aggr)[cur];
 		else
 			return NULL;
 	}
 	virtual bool isDone()
 	{
-		return (cur&gt;=aggr-&gt;getLen());
+		return (cur>=aggr->getLen());
 	}
 };
 
-template&lt;class Item&gt;
+template<class Item>
 class Aggregate
 {
 public:
-	virtual Iterator&lt;Item&gt;* createIterator() = 0;
+	virtual Iterator<Item>* createIterator() = 0;
 	virtual ~Aggregate(){}
 };
 
-template&lt;class Item&gt;
-class ConcreteAggregate:public Aggregate&lt;Item&gt;
+template<class Item>
+class ConcreteAggregate:public Aggregate<Item>
 {
-	vector&lt;Item &gt;data;
+	vector<Item >data;
 public:
 	ConcreteAggregate()
 	{
@@ -105,9 +105,9 @@ public:
 		data.push_back(2);
 		data.push_back(3);
 	}
-	virtual Iterator&lt;Item&gt;* createIterator()
+	virtual Iterator<Item>* createIterator()
 	{
-		return new ConcreteIterator&lt;Item&gt;(this);
+		return new ConcreteIterator<Item>(this);
 	}
 	Item& operator[](int index)
 	{
@@ -121,12 +121,12 @@ public:
 
 int main()
 {
-	Aggregate&lt;int&gt; * aggr =new ConcreteAggregate&lt;int&gt;();
-	Iterator&lt;int&gt; *it=aggr-&gt;createIterator();
+	Aggregate<int> * aggr =new ConcreteAggregate<int>();
+	Iterator<int> *it=aggr->createIterator();
 
-	for(it-&gt;first();!it-&gt;isDone();it-&gt;next())
+	for(it->first();!it->isDone();it->next())
 	{
-		cout&lt;&lt;*(it-&gt;currentItem())&lt;&lt;endl;
+		cout<<*(it->currentItem())<<endl;
 	}
 	delete it;
 	delete aggr;

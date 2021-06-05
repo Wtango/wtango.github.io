@@ -31,7 +31,7 @@ tags:
 
 <pre>ls ./../../../
 blogs.dir  current  languages  plugins	themes	uploads
-[******.rhcloud.com data]\&gt; 
+[******.rhcloud.com data]\> 
 </pre>
 
 发现到了data目录下了，data目录下的current目录才是我们真正存放WordPress程序的地方。要说为什么我们在baidusubmit目录下向上退三层到了这个data目录下，是因为plugin目录又是一个链接，所以向上退3层的时候没有退到正确的地方，所以没有找到wp-config.php文件。
