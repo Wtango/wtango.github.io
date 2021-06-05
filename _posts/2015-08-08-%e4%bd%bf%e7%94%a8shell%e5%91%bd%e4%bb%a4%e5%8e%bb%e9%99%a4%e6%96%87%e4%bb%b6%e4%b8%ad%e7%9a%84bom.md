@@ -6,8 +6,6 @@ author: Tango
 layout: post
 guid: http://tango.wicp.net:8888/?p=44
 permalink: '/%e4%bd%bf%e7%94%a8shell%e5%91%bd%e4%bb%a4%e5%8e%bb%e9%99%a4%e6%96%87%e4%bb%b6%e4%b8%ad%e7%9a%84bom/'
-categories:
-  - Linux
 tags:
   - Records
   - Linux
@@ -18,6 +16,8 @@ tags:
 
 <!--more-->
 
-<pre>grep -r -I -l $'^\xEF\xBB\xBF' . | xargs sed -i 's/^\xEF\xBB\xBF//g'</pre>
+```shell
+grep -r -I -l $'^\xEF\xBB\xBF' . | xargs sed -i 's/^\xEF\xBB\xBF//g'
+```
 
 这个命令将从当前名录开始递归检索，遇到 EF BB BF 会将其删除，并将修改写到原文件中。如果不要使用递归就把 grep -r 选项去掉。还可以修改开始检索的名录，把&#8217;.&#8217;号改成要检索的目录即可。目录和子目录都不能有空格，因为xargs命令默认使用空格来分割参数。

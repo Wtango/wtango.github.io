@@ -28,7 +28,7 @@ tags:
 
 #### 2.模式结构
 
-[<img class="aligncenter size-full wp-image-298" src="http://www.wtango.com/wp-content/uploads/2015/10/prototype-pattern.png" alt="prototype-pattern" width="590" height="265" srcset="http://www.wtango.com/wp-content/uploads/2015/10/prototype-pattern.png 590w, http://www.wtango.com/wp-content/uploads/2015/10/prototype-pattern-300x135.png 300w" sizes="(max-width: 590px) 100vw, 590px" />](http://www.wtango.com/wp-content/uploads/2015/10/prototype-pattern.png)
+[<img class="aligncenter size-full wp-image-298" src="../wp-content/uploads/2015/10/prototype-pattern.png" alt="prototype-pattern" width="590" height="265" srcset="../wp-content/uploads/2015/10/prototype-pattern.png 590w, ../wp-content/uploads/2015/10/prototype-pattern-300x135.png 300w" sizes="(max-width: 590px) 100vw, 590px" />](../wp-content/uploads/2015/10/prototype-pattern.png)
 
 #### 3.实现
 

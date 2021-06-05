@@ -25,7 +25,7 @@ tags:
 
 #### 2.模式结构
 
-<img class="aligncenter size-full wp-image-394" src="http://www.wtango.com/wp-content/uploads/2016/01/Iteraror.png" alt="Iteraror" width="749" height="497" srcset="http://www.wtango.com/wp-content/uploads/2016/01/Iteraror.png 749w, http://www.wtango.com/wp-content/uploads/2016/01/Iteraror-300x199.png 300w" sizes="(max-width: 749px) 100vw, 749px" />
+<img class="aligncenter size-full wp-image-394" src="../wp-content/uploads/2016/01/Iteraror.png" alt="Iteraror" width="749" height="497" srcset="../wp-content/uploads/2016/01/Iteraror.png 749w, ../wp-content/uploads/2016/01/Iteraror-300x199.png 300w" sizes="(max-width: 749px) 100vw, 749px" />
 
 **(1)Aggregate**:几个聚集对象，类似STL中的“Vector”、“List”等对象。STL中的Iterator与我们这里描述的枚举器模式有些不一样。其begin()等函数返回一个枚举器，而使用没举器的方法基本是一致的。
 

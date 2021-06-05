@@ -26,7 +26,7 @@ tags:
 
 ##### 2.模式结构
 
-[<img class="aligncenter wp-image-210 size-full" src="http://www.wtango.com/wp-content/uploads/2015/09/singleton.png" alt="singleton" width="991" height="367" srcset="http://www.wtango.com/wp-content/uploads/2015/09/singleton.png 991w, http://www.wtango.com/wp-content/uploads/2015/09/singleton-300x111.png 300w" sizes="(max-width: 991px) 100vw, 991px" />](http://www.wtango.com/wp-content/uploads/2015/09/singleton.png)
+[<img class="aligncenter wp-image-210 size-full" src="../wp-content/uploads/2015/09/singleton.png" alt="singleton" width="991" height="367" srcset="../wp-content/uploads/2015/09/singleton.png 991w, ../wp-content/uploads/2015/09/singleton-300x111.png 300w" sizes="(max-width: 991px) 100vw, 991px" />](../wp-content/uploads/2015/09/singleton.png)
 
 &nbsp;
 

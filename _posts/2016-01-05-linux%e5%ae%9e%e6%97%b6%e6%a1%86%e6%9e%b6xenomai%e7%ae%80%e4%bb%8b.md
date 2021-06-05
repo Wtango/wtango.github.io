@@ -45,7 +45,7 @@ Xenomai 在Adeos 系统中的域优先级高于Linux 域，每当中断到来之
 
 下图体现了co-kernel，Linux kernel和Adeos之间的关系
 
-<img class="aligncenter size-full wp-image-374" src="http://www.wtango.com/wp-content/uploads/2016/01/Adeos.png" alt="Adeos" width="455" height="232" srcset="http://www.wtango.com/wp-content/uploads/2016/01/Adeos.png 455w, http://www.wtango.com/wp-content/uploads/2016/01/Adeos-300x153.png 300w" sizes="(max-width: 455px) 100vw, 455px" />
+<img class="aligncenter size-full wp-image-374" src="../wp-content/uploads/2016/01/Adeos.png" alt="Adeos" width="455" height="232" srcset="../wp-content/uploads/2016/01/Adeos.png 455w, ../wp-content/uploads/2016/01/Adeos-300x153.png 300w" sizes="(max-width: 455px) 100vw, 455px" />
 
 #### 3. 性能测试
 

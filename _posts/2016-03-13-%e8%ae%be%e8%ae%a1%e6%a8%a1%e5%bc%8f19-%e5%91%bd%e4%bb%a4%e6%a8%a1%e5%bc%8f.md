@@ -26,7 +26,7 @@ tags:
 
 #### 2.模式结构
 
-<img class="aligncenter size-full wp-image-414" src="http://www.wtango.com/wp-content/uploads/2016/03/Screenshot-from-2016-03-13-145348.png" alt="Screenshot from 2016-03-13 14:53:48" width="732" height="511" srcset="http://www.wtango.com/wp-content/uploads/2016/03/Screenshot-from-2016-03-13-145348.png 732w, http://www.wtango.com/wp-content/uploads/2016/03/Screenshot-from-2016-03-13-145348-300x209.png 300w" sizes="(max-width: 732px) 100vw, 732px" />
+<img class="aligncenter size-full wp-image-414" src="../wp-content/uploads/2016/03/Screenshot-from-2016-03-13-145348.png" alt="Screenshot from 2016-03-13 14:53:48" width="732" height="511" srcset="../wp-content/uploads/2016/03/Screenshot-from-2016-03-13-145348.png 732w, ../wp-content/uploads/2016/03/Screenshot-from-2016-03-13-145348-300x209.png 300w" sizes="(max-width: 732px) 100vw, 732px" />
 
 **(1)Command:**执行命令的接口。
 

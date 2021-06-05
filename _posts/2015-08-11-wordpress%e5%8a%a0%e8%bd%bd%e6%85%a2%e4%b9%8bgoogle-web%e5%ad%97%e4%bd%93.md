@@ -6,8 +6,6 @@ author: Tango
 layout: post
 guid: http://wtango.com:8888/?p=98
 permalink: '/wordpress%e5%8a%a0%e8%bd%bd%e6%85%a2%e4%b9%8bgoogle-web%e5%ad%97%e4%bd%93/'
-categories:
-  - wordpress
 tags:
   - WordPress
 ---
@@ -17,7 +15,8 @@ tags:
 
 ##### 在你的主题的 function.php 顶部加入以下代码即可：
 
-<pre class="brush: php; title: ; notranslate" title="">add_filter('gettext_with_context', 'disable_open_sans', 888, 4 );
+```php
+add_filter('gettext_with_context', 'disable_open_sans', 888, 4 );
 function disable_open_sans( $translations, $text, $context, $domain )
 {
           if ( 'Open Sans font: on or off' == $context && 'on' == $text ) {
@@ -25,6 +24,6 @@ function disable_open_sans( $translations, $text, $context, $domain )
           }
           return $translations;
 }
-</pre>
+```
 
-文章转载自：http://www.iplaysoft.com/item/2019
+> 文章转载自：http://www.iplaysoft.com/item/2019
