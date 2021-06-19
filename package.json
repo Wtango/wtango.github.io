@@ -11,17 +11,15 @@
         "grunt-cli": "^1.3.2",
         "grunt-contrib-less": "^0.11.4",
         "grunt-contrib-uglify": "^0.5.1",
-        "grunt-contrib-watch": "^0.6.1",
-        "http-server": "^0.12.3"
+        "grunt-contrib-watch": "^0.6.1"
     },
     "repository": {
         "type": "git",
         "url": "https://github.com.cnpmjs.org/Wtango/wtango.github.io"
     },
     "scripts": {
-        "preview": "http-server _site",
-        "jekyll": "docker run --rm --volume=\"$PWD:/srv/jekyll\" jekyll/jekyll jekyll",
+        "jekyll": "docker run --rm --volume=\"$PWD:/srv/jekyll\" -p 4000:4000 -p 35729:35729 jekyll/jekyll jekyll",
         "build": "npm run jekyll -- build",
-        "watch": "concurrently \"grunt watch\" \"npm run jekyll -- build -w\" \"npm run preview\""
+        "watch": "concurrently \"grunt watch\" \"npm run jekyll -- serve -l\""
     }
 }
