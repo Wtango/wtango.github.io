@@ -2,7 +2,7 @@
 layout:     post
 title:      "DDD 实践手册(番外篇: 事件风暴-概念)"
 date:       2021-09-04T14:34:17.420Z
-author:     "猿知猿问 Yangtang"
+author:     "@Joshua"
 tags:
     - 领域驱动设计
     - DDD
